@@ -35,9 +35,15 @@ body {
 }
 
 .wrapper h1 span {
-   font-size: 0.2em;
-   background: rgb(81, 206, 129);
+   font-size: 0.3em;
+   background: midnightblue;
    padding: 0.2em 0.5em;
+}
+
+@media (max-width:768px) {
+   .wrapper h1 span {
+      display: none;
+   }
 }
 
 .profiling-container {
@@ -65,6 +71,13 @@ body {
    display: flex;
    justify-content: flex-end;
    margin: 1em 0 0 0;
+}
+
+@media (max-width: 768px) {
+   .submit-button {
+      display: flex;
+      justify-content: center;
+   }
 }
 
 .submit-button input {
